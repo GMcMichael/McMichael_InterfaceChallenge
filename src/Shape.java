@@ -1,10 +1,14 @@
 import java.util.ArrayList;
+import processing.core.PApplet;
 
 abstract class Shape implements Compare {
 
     private Point position;
     private static int numShapes;
     private int id;
+    PApplet p;
+
+    abstract public void draw(PApplet p);
 
     public Shape(Point position){
         this.position=position;

@@ -7,8 +7,12 @@ class Main {
 
     public static void main(String[] args) {
 
-        PApplet.main(OPTIONS);
+        //sortingTest();
 
+        PApplet.main(OPTIONS);
+    }
+
+    private static void sortingTest(){
         ArrayList<Shape> shapes = new ArrayList<Shape>();
         add(shapes);
         display(shapes);
@@ -18,6 +22,7 @@ class Main {
         display(shapes);
         System.out.println(String.format("The total number of shapes sorted are: %d", shapes.size()));
     }
+
     private static void add(ArrayList<Shape> shapes) {
         shapes.add(new Circle(new Point(300.0, 300.0), 100.0));
         shapes.add(new Circle(new Point(200.0, 200.0), 50.0));
